@@ -14,6 +14,24 @@ Placez ensuite le plugin dans le dossier "**plugins**" de votre serveur.
 
 ## Configuration
 
+Pour fonctionner, le plugin utilise un port sur votre machine. Par défault, c'st le port 8192 qui est utilisé. Si vous souhaitez le changer, vous devez éditer le fichier "**config.cfg**" de votre serveur et y ajouter cette ligne :
 
+```
+vote_port XXXX 
+```
+XXXX est le port que vous souhaitez utiliser
 
 ## Utilisation
+
+Quand votre plugin de vote est installé et configuré, vous pouvez l'utiliser ainsi dans votre script (GameMode ou FilterScript) :
+
+```c++
+public OnPlayerVote(ip, playername, date
+{
+    new string[64];
+    format(string, sizeof string, "%s a voté pour le serveur !", playername);
+    SendClientMessageToAll(0xFFFFFFAA, string);
+}
+```
+
+Ceci est un simple exemple, si vous le souhaitez vous pouvez donc ainsi offrir des récompenses à vos joueurs grâce à cette callback !
