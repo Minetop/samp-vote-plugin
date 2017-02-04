@@ -2,7 +2,11 @@
 
 Ce plugin est une création de Top-Serveurs : https://top-serveurs.net. Il permet de récompenser les joueurs de votre serveur lorsqu'ils votent sur notre site : https://gta.top-serveurs.net.
 
-La récompense ce fait via l'utilisation d'une simple callback dans votre GameMode/FilterScript : **OnPlayerVote(ip, playername, date)**
+
+
+![Screen plugin de vote](https://top-serveurs.net/upload/57cb1c7e2686a-modal_vote_screen%20copie.png "Screen plugin de vote")
+
+La récompense se fait via l'utilisation d'une simple callback dans votre GameMode/FilterScript : **OnPlayerVote(ip, playername, date)**
 
 ## Installation
 
