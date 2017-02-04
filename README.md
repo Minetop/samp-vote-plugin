@@ -1,6 +1,7 @@
 # Plugin de vote pour serveur SA:MP
 
 Ce plugin est une création de Top-Serveurs : https://top-serveurs.net. Il permet de récompenser les joueurs de votre serveur lorsqu'ils votent sur notre site : https://gta.top-serveurs.net.
+
 La récompense ce fait via l'utilisation d'une simple callback dans votre GameMode/FilterScript : OnPlayerVote(ip, playername, date)
 
 ## Installation
